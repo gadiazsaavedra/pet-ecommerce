@@ -2,17 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Store - Todo para tu Mascota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Pet Store - La mejor tienda online para tu mascota. Productos para perros, gatos, aves, roedores y más.">
+    <meta name="theme-color" content="#667eea">
+    <title>🐾 Pet Store - Todo para tu Mascota</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-brand">🐾 Pet Store</div>
             <div class="nav-search">
-                <input type="text" id="searchInput" placeholder="Buscar productos...">
-                <button onclick="searchProducts()">Buscar</button>
+                <input type="text" id="searchInput" placeholder="🔍 Buscar productos para tu mascota..." autocomplete="off">
+                <button onclick="searchProducts()" aria-label="Buscar productos">🔍</button>
             </div>
         </nav>
     </header>
@@ -53,8 +56,8 @@
 
         <section class="content">
             <div class="filters-bar">
-                <span id="activeFilters"></span>
-                <button onclick="clearFilters()">Limpiar Filtros</button>
+                <span id="activeFilters" style="flex: 1;"></span>
+                <button onclick="clearFilters()" aria-label="Limpiar todos los filtros">🗑️ Limpiar Filtros</button>
             </div>
             
             <div class="products-grid" id="productsGrid">
